@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Velvet Bean Coffee Co.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              coffee: {
+                900: '#1a0f0a',
+                800: '#2d1810',
+                700: '#3d2317',
+                600: '#4e2d1f',
+                500: '#6b3d2a',
+                400: '#8b5a3c',
+              },
+              caramel: {
+                400: '#c9a66b',
+                500: '#b8956a',
+                600: '#a67c52',
+              },
+              cream: {
+                100: '#f5f0e8',
+                200: '#e8e0d4',
+                300: '#d4c9b8',
+              },
+              teal: {
+                400: '#5bb5a6',
+                500: '#4a9a8a',
+                600: '#3d7d73',
+              }
+            },
+            fontFamily: {
+              sans: ['DM Sans', 'sans-serif'],
+              display: ['Playfair Display', 'serif'],
+            }
+          }
+        }
+      }
+    </script>
+  </head>
+  <body class="bg-coffee-900 text-cream-200 font-sans antialiased">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
